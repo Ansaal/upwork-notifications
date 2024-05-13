@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build  
+        run: npm run build && unlink ./upwork-notifications-client/dist  
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
